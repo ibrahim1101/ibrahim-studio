@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="contact-page"><span className="eyebrow">404 / OFF THE BEATEN PATH</span><h1>This page<br/>is still a <em>possibility.</em></h1><p>Explore the available experiences from the studio.</p><a className="primary" href="/">Back to the studio ↗</a></main>}

@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ibrahim-studio",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public"
+  },
+  "vars": {
+    "ENQUIRY_FROM": "Ibrahim Studio <enquiries@notify.ibrahimshaik.com>"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

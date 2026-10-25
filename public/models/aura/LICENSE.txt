@@ -1,0 +1,29 @@
+AURA complete residence model
+
+"VR Apartment" by FDU_oficial
+Source: https://sketchfab.com/3d-models/vr-apartment-fb1b717d457540129c6bf45315aa2612
+Creator: https://sketchfab.com/FDU_oficial
+Licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+
+Original GLB includes this author, title, source and CC BY 4.0 license in asset.extras.
+Distributed copy retrieved from the Allen Institute for AI Objaverse collection:
+https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-139/fb1b717d457540129c6bf45315aa2612.glb
+Collection information: https://objaverse.allenai.org/docs/intro/
+Objaverse collection organization is ODC-By 1.0. Individual model copyright remains with its creator under CC BY 4.0.
+
+Changes by Ibrahim Studio: city backdrop omitted; residence transforms baked into geometry; original meshes, UVs and 24 embedded texture images retained. A balcony glass panel was separated for a sliding-door animation. Runtime materials display the artist's baked lighting without double-lighting; optional warm tint and floor/wall cutaways. Camera paths, room navigation, mouse look and floor-plan diagrams added. The static preview is the artist's model thumbnail, with the same attribution.
+
+This is an independent architectural showcase, not a scanned or surveyed property and not the floor plan of the site's fictional listings. No affiliation or endorsement by the artist is implied.
+
+Furniture assets used in the FORM material atelier (no longer used by the residence scene):
+velvet-sofa.glb: GlamVelvetSofa, Eric Chadwick / Wayfair 2021, CC BY 4.0.
+https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlamVelvetSofa
+velvet-chair.glb: SheenChair, Eric Chadwick / Wayfair 2020, CC0.
+https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenChair
+
+Further runtime changes: outward-facing source wall triangles use a daylight stone finish to replace unlit exterior atlas regions. All original vertices, openings and room dimensions are preserved; interior baked finishes remain intact. The normal arrival and walk modes display the complete shell and roof; wall cuts are used only for the explicit dollhouse mode.
+
+FORM presentation changes: each original furniture model is centered and uniformly scaled in a studio environment. Original meshes, textures, UVs and authored materials are retained. Camera viewpoints, orbit controls, light colours and the floor/contact disc are added. These are independent studies, not exact models of catalogue products.
+
+Stillwater also uses GlamVelvetSofa in the conceptual lobby/suites/terraces. Uniform scaling/centering and placement adapt the source to existing sofa footprints, original materials/textures retained, original source lights disabled. Existing resort lighting is used. The environment remains original conceptual geometry, not a real scanned resort.

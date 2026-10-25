@@ -1,0 +1,5 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {CATEGORY_PRICES,estimateBuild,enquiryText,PACKAGES} from '../lib/studio.ts';
+test('3D estimates keep build, asset work and on-site labour separately priced',()=>{assert.deepEqual(estimateBuild('hotel','3d',75000,'full',2),{base:199999,assets:75000,visit:25000,total:299999});assert.deepEqual(estimateBuild('restaurant','essential',200000,'full',3),{base:14999,assets:0,visit:0,total:14999});assert.equal(estimateBuild('commerce','3d',-100,'half',1).total,107499);assert.equal(estimateBuild('automotive','interactive',50000,'half',2).total,49999)});
+test('rate card is complete and enquiry output retains reviewable fields',()=>{assert.equal(CATEGORY_PRICES.length,5);for(const p of CATEGORY_PRICES){assert.ok(p.essential>0&&p.interactive>p.essential&&p.signature>p.interactive)}assert.equal(PACKAGES.length,5);assert.equal(enquiryText({Name:' Sample ',Email:'sample@example.com',Optional:' '}),'Name: Sample\n\nEmail: sample@example.com')});

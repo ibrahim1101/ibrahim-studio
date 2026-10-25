@@ -1,0 +1,6 @@
+export const FORM_FINISHES=['Natural','Forest','Pearl','Ember'];
+export function formMatches<T extends {price:number,tag:string,name:string}>(items:T[],budget:number,tag:string,query=''){return items.filter(i=>i.price<=budget&&(tag==='All'||i.tag===tag)&&i.name.toLowerCase().includes(query.trim().toLowerCase()))}
+export function validFormEdit(value:unknown,ids:string[]):value is {item:string,finish:string,qty:number}{if(!value||typeof value!=='object')return false;const v=value as Record<string,unknown>;return ids.includes(v.item as string)&&FORM_FINISHES.includes(v.finish as string)&&Number.isInteger(v.qty)&&Number(v.qty)>=1&&Number(v.qty)<=10}
+export type GuestReview={id:string,item:string,rating:number,text:string};
+export function validReview(v:unknown,ids:string[]):v is GuestReview{if(!v||typeof v!=='object')return false;const r=v as GuestReview;return typeof r.id==='string'&&ids.includes(r.item)&&Number.isInteger(r.rating)&&r.rating>=1&&r.rating<=5&&typeof r.text==='string'&&r.text.trim().length>=10&&r.text.length<=500}
+export function reviewSummary(rows:GuestReview[],item:string){const found=rows.filter(r=>r.item===item);return {count:found.length,average:found.length?found.reduce((n,r)=>n+r.rating,0)/found.length:0}}

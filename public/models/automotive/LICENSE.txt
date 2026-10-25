@@ -1,0 +1,15 @@
+Ferrari 458 Italia by vicent091036
+Original model: https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6
+Distribution source: https://github.com/mrdoob/three.js/blob/dev/examples/models/gltf/ferrari.glb
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Attribution in upstream example: https://threejs.org/examples/webgl_materials_car.html
+Upstream asset license inventory: https://github.com/mrdoob/three.js/issues/23089
+
+Ibrahim Studio modifications: decompression, transforms baked to world space,
+component segmentation, revised physically based materials, four finish previews,
+a curved coupe roof adaptation, animated rear-cover inspection and roof cutaway.
+The added engine/cooling assembly is an illustrative visualization, not factory CAD.
+Poster images are software-rendered previews derived from the licensed model.
+Ferrari names and marks identify the vehicle; this is an independent showcase.
+No endorsement or affiliation is claimed.
