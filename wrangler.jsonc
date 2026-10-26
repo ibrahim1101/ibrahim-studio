@@ -11,7 +11,8 @@
     "directory": "./public"
   },
   "vars": {
-    "ENQUIRY_FROM": "Ibrahim Studio <enquiries@notify.ibrahimshaik.com>"
+    "ENQUIRY_FROM": "Ibrahim Studio <enquiries@notify.ibrahimshaik.com>",
+    "TURNSTILE_SITE_KEY": "0x4AAAAAAFmYWfr0j7OdKE7z"
   },
   "observability": {
     "enabled": true
